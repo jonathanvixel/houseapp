@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - BussyLink</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <h1> <span class="username">| Jonathan |</span></h1>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#" class="active" id="dashboard-link">Dashboard</a>
+                    <a href="#" id="chat-link">Chat</a>
+                    <a href="#" id="settings-link">Settings</a>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div id="dashboard" class="content-section active">
+                <h2>Dashboard</h2>
+                <div class="dashboard-grid">
+                    <div class="box" id="todo-box">
+                        <h3>To-Do List</h3>
+                        <ul id="todo-list"></ul>
+                        <div class="input-group">
+                            <input type="text" id="new-todo" placeholder="Add new task">
+                            <button id="add-todo" class="add-button">+</button>
+                        </div>
+                    </div>
+                    <div class="box" id="grocery-box">
+                        <h3>Grocery List</h3>
+                        <ul id="grocery-list"></ul>
+                        <div class="input-group">
+                            <input type="text" id="new-grocery" placeholder="Add new item">
+                            <button id="add-grocery" class="add-button">+</button>
+                        </div>
+                    </div>
+                    <div class="box" id="message-board-box">
+                        <h3>Message Board</h3>
+                        <div id="message-board"></div>
+                        <div class="input-group">
+                            <input type="text" id="new-message" placeholder="Type a message">
+                            <input type="file" id="message-image">
+                            <button id="post-message" class="add-button">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="chat" class="content-section">
+                <div class="chat-container">
+                    <div class="sidebar">
+                        <h2>Chats</h2>
+                        <ul id="chat-list"></ul>
+                        <div class="input-group">
+                            <input type="text" id="new-chat" placeholder="Start new chat">
+                            <button id="add-chat" class="add-button">+</button>
+                        </div>
+                    </div>
+                    <div class="chat-window">
+                        <div id="chat-header">
+                            <h2 id="chat-title">Select a chat</h2>
+                        </div>
+                        <div id="chat-messages"></div>
+                        <div class="chat-input">
+                            <input type="text" id="message-input" placeholder="Type a message">
+                            <button id="send-message" class="add-button">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="settings" class="content-section">
+                <h2>Settings</h2>
+                <p>Settings options will be available here.</p>
+            </div>
+        </div>
+    </div>
+    <script src="indexscript.js"></script>
+</body>
+</html>
