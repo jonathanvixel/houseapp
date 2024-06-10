@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Menu Toggle for Mobile
+    const menuButton = document.getElementById('menu-button');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    menuButton.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('active');
+    });
+
     // Navigation and Section Switching
     const dashboardLink = document.getElementById('dashboard-link');
     const chatLink = document.getElementById('chat-link');
