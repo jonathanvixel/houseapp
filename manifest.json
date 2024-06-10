@@ -1,0 +1,21 @@
+{
+    "name": "Rod Home",
+    "short_name": "Home",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1abc86",
+    "icons": [
+      {
+        "src": "tree.jpeg",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "tree.jpeg",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
